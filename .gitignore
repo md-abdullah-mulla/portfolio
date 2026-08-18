@@ -1,0 +1,15 @@
+node_modules
+dist
+.DS_Store
+*.local
+.vite
+.arena
+.cache
+.npm
+.env
+.env.*
+!.env.example
+uploads
+*.log
+.idea
+.vscode
