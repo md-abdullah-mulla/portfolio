@@ -9,10 +9,10 @@ const HeroScene = lazy(() =>
 
 export function Hero() {
   return (
-    <section id="home" className="hero" aria-label="Introduction">
+    <section id="home" className="hero" aria-label="Md Abdullah Mulla, Software Developer">
       <div className="hero-copy">
         <div className="section-wide w-full">
-          <h1 className="display hero-name text-paper">
+          <h1 className="display hero-name text-paper" itemProp="name">
             MD
             <br />
             ABDULLAH
@@ -46,7 +46,10 @@ export function Hero() {
             <p className="type-d text-lg tracking-tight text-paper md:text-2xl">
               {profile.role}
             </p>
-            <p className="mt-4 text-[0.98rem] leading-relaxed text-paper-dim md:text-[1.05rem]">
+            <p
+              className="mt-4 text-[0.98rem] leading-relaxed text-paper-dim md:text-[1.05rem]"
+              itemProp="description"
+            >
               {profile.headline}
             </p>
 

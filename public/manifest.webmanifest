@@ -1,0 +1,26 @@
+{
+  "name": "Md Abdullah Mulla — Software Developer",
+  "short_name": "AM Portfolio",
+  "description": "Portfolio of Md Abdullah Mulla, Software Developer and Web Developer from Bangladesh.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#070708",
+  "theme_color": "#070708",
+  "lang": "en",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

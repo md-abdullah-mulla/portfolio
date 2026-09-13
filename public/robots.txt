@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://md-abdullah-mulla.netlify.app/sitemap.xml
+Host: https://md-abdullah-mulla.netlify.app

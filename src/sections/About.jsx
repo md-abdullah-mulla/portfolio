@@ -27,9 +27,12 @@ export function About() {
               <div className="portrait-frame overflow-hidden border border-white/10 bg-ink-3">
                 <img
                   src={profile.portrait}
-                  alt="Portrait of Md Abdullah Mulla wearing a Phitron jersey"
+                  alt="Md Abdullah Mulla, Software Developer from Barguna, Bangladesh"
                   width={900}
                   height={891}
+                  fetchPriority="high"
+                  decoding="async"
+                  itemProp="image"
                   className="aspect-[4/5] w-full object-cover object-[50%_18%]"
                 />
               </div>

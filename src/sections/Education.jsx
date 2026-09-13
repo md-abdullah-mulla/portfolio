@@ -12,7 +12,12 @@ export function Education() {
 
         <div className="mt-14 divide-y divide-white/10 border-y border-white/10">
           {education.map((item) => (
-            <Reveal key={item.program} className="grid gap-4 py-10 md:grid-cols-12 md:items-end">
+            <Reveal
+              key={item.program}
+              className="grid gap-4 py-10 md:grid-cols-12 md:items-end"
+              itemScope
+              itemType="https://schema.org/EducationalOccupationalCredential"
+            >
               <div className="md:col-span-4">
                 <p className="kicker">{item.program}</p>
                 <h3 className="mt-3 type-d text-3xl tracking-tight text-paper md:text-4xl">

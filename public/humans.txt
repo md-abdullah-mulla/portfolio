@@ -1,0 +1,14 @@
+/* TEAM */
+Developer: Md Abdullah Mulla
+Location: Barguna, Bangladesh
+Contact: md.abdullah.mulla@gmail.com
+GitHub: https://github.com/md-abdullah-mulla
+Site: https://md-abdullah-mulla.netlify.app
+
+/* SITE */
+Last update: 2026-09-13
+Language: English
+Doctype: HTML5
+Standards: HTML, CSS, JavaScript
+Components: React, Vite, Three.js, GSAP, Framer Motion, Tailwind CSS
+Software: VS Code

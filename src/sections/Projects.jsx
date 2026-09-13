@@ -20,16 +20,21 @@ export function Projects() {
           {projects.map((project, i) => (
             <article
               key={project.id}
+              id={project.id}
               className="grid items-center gap-10 lg:grid-cols-12 lg:gap-14"
+              itemScope
+              itemType="https://schema.org/SoftwareApplication"
             >
               <Reveal className={`lg:col-span-7 ${i % 2 === 1 ? 'lg:order-2' : ''}`}>
                 <div className="project-frame" data-cursor="view">
                   <img
                     src={project.image}
-                    alt={`${project.name} interface preview`}
+                    alt={`${project.name} — ${project.kicker} by Md Abdullah Mulla`}
                     width={1600}
                     height={1000}
                     loading="lazy"
+                    decoding="async"
+                    itemProp="image"
                   />
                 </div>
               </Reveal>
@@ -39,8 +44,13 @@ export function Projects() {
                   <p className="kicker">
                     {project.index} / {project.kicker}
                   </p>
-                  <h3 className="display mt-4 text-5xl text-paper md:text-6xl">{project.name}</h3>
-                  <p className="mt-5 text-[1.02rem] leading-relaxed text-paper-dim">
+                  <h3 className="display mt-4 text-5xl text-paper md:text-6xl" itemProp="name">
+                    {project.name}
+                  </h3>
+                  <p
+                    className="mt-5 text-[1.02rem] leading-relaxed text-paper-dim"
+                    itemProp="description"
+                  >
                     {project.description}
                   </p>
                   <p className="mt-4 text-sm leading-relaxed text-mute">
@@ -73,7 +83,7 @@ export function Projects() {
                       className="btn btn-solid"
                       href={project.github}
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                       data-cursor="hover"
                     >
                       <span>GitHub</span>

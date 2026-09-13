@@ -3,6 +3,7 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { journey } from '../utils/data'
 import { useIsMobile, useReducedMotion } from '../hooks/useMedia'
+import { useReady } from '../hooks/useReady'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -11,9 +12,10 @@ export function Journey() {
   const track = useRef(null)
   const mobile = useIsMobile()
   const reduced = useReducedMotion()
+  const ready = useReady()
 
   useEffect(() => {
-    if (mobile || reduced || !pin.current || !track.current) return undefined
+    if (!ready || mobile || reduced || !pin.current || !track.current) return undefined
 
     const ctx = gsap.context(() => {
       const distance = track.current.scrollWidth - window.innerWidth
@@ -40,7 +42,7 @@ export function Journey() {
       window.removeEventListener('resize', refresh)
       ctx.revert()
     }
-  }, [mobile, reduced])
+  }, [ready, mobile, reduced])
 
   return (
     <section id="journey" ref={pin} className="border-t border-white/5" aria-labelledby="journey-title">

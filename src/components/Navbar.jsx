@@ -39,7 +39,13 @@ export function Navbar() {
   return (
     <>
       <header className={`nav ${scrolled ? 'is-scrolled' : ''}`}>
-        <a href="#home" className="logo" onClick={(e) => { e.preventDefault(); go('home') }} data-cursor="hover">
+        <a
+          href="#home"
+          className="logo"
+          aria-label="Md Abdullah Mulla — home"
+          onClick={(e) => { e.preventDefault(); go('home') }}
+          data-cursor="hover"
+        >
           AM
         </a>
         <nav className="nav-links" aria-label="Primary">
@@ -48,6 +54,7 @@ export function Navbar() {
               key={item.id}
               href={`#${item.id}`}
               className={active === item.id ? 'is-active' : ''}
+              aria-current={active === item.id ? 'page' : undefined}
               onClick={(e) => {
                 e.preventDefault()
                 go(item.id)

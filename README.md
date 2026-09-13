@@ -34,3 +34,10 @@ Edit `src/utils/data.js`:
 - each project's `github` and `live` URLs
 
 Portrait: `public/images/portrait.webp` (fallback `portrait.jpg`).
+
+## SEO
+
+- Canonical URL, Open Graph, Twitter Card, JSON-LD (Person, WebSite, ProfilePage, projects)
+- `public/sitemap.xml`, `public/robots.txt`, `public/manifest.webmanifest`
+- Semantic HTML, image alts, noscript fallback
+

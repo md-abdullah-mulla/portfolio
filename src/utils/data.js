@@ -1,3 +1,14 @@
+export const site = {
+  url: 'https://md-abdullah-mulla.netlify.app',
+  name: 'Md Abdullah Mulla',
+  title: 'Md Abdullah Mulla — Software Developer in Bangladesh',
+  description:
+    'Md Abdullah Mulla is a Software Developer, Web Developer and Problem Solver from Barguna, Bangladesh. He builds interactive digital experiences, full-stack web applications, and products with code, curiosity, and obsessive attention to detail.',
+  locale: 'en_US',
+  ogImage: '/images/og-cover.jpg',
+  twitter: '',
+}
+
 export const profile = {
   name: 'Md Abdullah Mulla',
   shortName: 'Abdullah',
@@ -25,7 +36,7 @@ export const profile = {
 export const socials = {
   email: 'md.abdullah.mulla@gmail.com',
   phone: '+880 1XXX-XXXXXX',
-  github: 'https://github.com/',
+  github: 'https://github.com/md-abdullah-mulla',
   linkedin: 'https://www.linkedin.com/',
   facebook: 'https://www.facebook.com/',
 }

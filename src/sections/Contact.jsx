@@ -39,7 +39,13 @@ export function Contact() {
                 className="btn"
                 data-cursor="hover"
                 target={link.href.startsWith('http') ? '_blank' : undefined}
-                rel={link.href.startsWith('http') ? 'noreferrer' : undefined}
+                rel={
+                  link.href.startsWith('http')
+                    ? link.label === 'GitHub'
+                      ? 'me noopener noreferrer'
+                      : 'noopener noreferrer'
+                    : undefined
+                }
               >
                 <span>{link.label}</span>
                 <ArrowUpRight size={14} />
@@ -48,11 +54,11 @@ export function Contact() {
           ))}
         </div>
 
-        <div className="mt-20 flex flex-col justify-between gap-4 border-t border-white/10 pt-8 text-[11px] uppercase tracking-[0.18em] text-mute md:flex-row">
-          <p>Md Abdullah Mulla — Software Developer</p>
-          <p>{socials.email}</p>
-          <p>© {new Date().getFullYear()} · Built as an experience</p>
-        </div>
+        <address className="mt-20 not-italic font-mono text-[11px] uppercase tracking-[0.18em] text-mute">
+          <a href={`mailto:${socials.email}`}>{socials.email}</a>
+          <span className="mx-3">·</span>
+          Barguna, Bangladesh
+        </address>
       </div>
     </section>
   )
